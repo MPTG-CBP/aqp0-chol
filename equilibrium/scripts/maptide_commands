@@ -1,0 +1,9 @@
+echo 0 | gmx trjconv -f traj_comp.xtc -dump 0 -s equilibration_posre.tpr -o init.pdb 
+
+~/Downloads/gromacs/build/bin/gmx maptide -f traj_comp.xtc -s init.pdb -spacing 0.1 -margin 5 -mo after_insertion_1.ccp4 -select "resname CHL1"
+
+
+
+
+
+for i in {2..5}; do cd $i ; echo 0 | gmx trjconv -f traj_comp.xtc -dump 0 -s equilibration_posre.tpr -o init.pdb ; ~/Downloads/gromacs/build/bin/gmx maptide -f traj_comp.xtc -s init.pdb -spacing 0.1 -margin 5 -mo after_insertion_$i.ccp4 -select "resname CHL1"  ; cd .. ; done

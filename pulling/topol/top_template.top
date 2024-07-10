@@ -1,0 +1,38 @@
+; system topology
+
+; Include forcefield parameters
+#include "/home/juan/Datos/temp_aqp0/detach_additional/volume1/jdorjuelam/aquaporin/cobra_BU/production/two-tet-expand/charmm36-nov2018.ff/forcefield.itp"
+
+; Include chain topologies
+#include "/home/juan/Datos/temp_aqp0/detach_additional/volume1/jdorjuelam/aquaporin/cobra_BU/production/two-tet-expand/topol/topol_Protein_chain.itp"
+
+; Include water topology for crystalographic waters
+#include "/home/juan/Datos/temp_aqp0/detach_additional/volume1/jdorjuelam/aquaporin/cobra_BU/production/two-tet-expand/charmm36-nov2018.ff/tip3p.itp"
+#include "/home/juan/Datos/temp_aqp0/detach_additional/volume1/jdorjuelam/aquaporin/cobra_BU/production/two-tet-expand/charmm36-nov2018.ff/tip3p_posres.itp"
+
+; Include sphyngolipid topology (with and without posres)
+#include "/home/juan/Datos/temp_aqp0/detach_additional/volume1/jdorjuelam/aquaporin/cobra_BU/production/two-tet-expand/topol/PSM.itp"
+#include "/home/juan/Datos/temp_aqp0/detach_additional/volume1/jdorjuelam/aquaporin/cobra_BU/production/two-tet-expand/topol/PSM_posres.itp"
+
+; Include cholesterol topology (with and without posres)
+#include "/home/juan/Datos/temp_aqp0/detach_additional/volume1/jdorjuelam/aquaporin/cobra_BU/production/two-tet-expand/topol/chol.itp"
+#include "/home/juan/Datos/temp_aqp0/detach_additional/volume1/jdorjuelam/aquaporin/cobra_BU/production/two-tet-expand/topol/chol_posres.itp"
+
+; Include topology for ions
+#include "/home/juan/Datos/temp_aqp0/detach_additional/volume1/jdorjuelam/aquaporin/cobra_BU/production/two-tet-expand/charmm36-nov2018.ff/ions.itp"
+
+;IS THIS POSRES NECESARY?!?!?
+;#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+;[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+;   1    1       1000       1000       1000
+;#endif
+
+[ system ]
+; Name
+Whole
+
+[ molecules ]
+; Compound        #mols
+
