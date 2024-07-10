@@ -9,8 +9,9 @@ For use related to these data, please cite this article:
 
 eLife12:RP90851, 2023, [https://doi.org/10.7554/eLife.90851.2](https://doi.org/10.7554/eLife.90851.2)
 
+All Relevant output data are within the manuscript and its Supporting Information files. 
 
-Scripts to setup the MD simulations and to analyze the output data are included. All Relevant output data are within the manuscript and its Supporting Information files. 
+Scripts to setup the MD simulations and to analyze the output data; topologies, and mdp simulation parameters are included in folders `equilibrium` and `pulling` 
 
 GROMACS input TPR files can be downloaded [here](xxx).  
 
