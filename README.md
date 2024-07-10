@@ -7,7 +7,7 @@ Po-Lin Chiu, Juan D. Orjuela, Bert L. de Groot, Camilo Aponte-Santamaría and Th
 
 For use related to these data, please cite this article:
 
-eLife12:RP90851, 2023, [https://doi.org/10.7554/eLife.90851.2](https://doi.org/10.7554/eLife.90851.2)
+[eLife12:RP90851, 2023, https://doi.org/10.7554/eLife.90851.2](https://doi.org/10.7554/eLife.90851.2)
 
 All Relevant output data are within the manuscript and its Supporting Information files. 
 
